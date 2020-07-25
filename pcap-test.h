@@ -43,9 +43,6 @@ struct tcp_header
 // 과제에서 요구한 packet의 정보를 출력해 준다.
 void printPacketInfo(const u_char* packet, u_int packet_size);
 
-// *packet을 기준으로 헤더들의 오프셋을 맞춘다.
-void initHeader(const u_char* packet);
-
 // 이더넷 헤더 정보 출력 함수
 // src_mac과 dst_mac을 출력해 준다.
 void printEthernetHeader(struct ethernet_header* eth_hdr);
