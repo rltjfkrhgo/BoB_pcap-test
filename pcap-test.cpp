@@ -72,6 +72,7 @@ void printTcpHeader(struct tcp_header* tcp_hdr)
 
 void printPayload(u_char payload[], u_int print_len)
 {
+    printf("data: ");
     for(int i = 0; i < print_len; i++)
         printf("%02x ", payload[i]);
     printf("\n\n");
